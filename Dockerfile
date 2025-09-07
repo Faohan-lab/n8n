@@ -1,0 +1,14 @@
+# Use official Node.js LTS image
+FROM node:18
+
+# Create app directory
+WORKDIR /data
+
+# Install n8n
+RUN npm install -g n8n
+
+# Expose port
+EXPOSE 5678
+
+# Start n8n
+CMD ["n8n"]
