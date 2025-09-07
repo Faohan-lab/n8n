@@ -11,4 +11,4 @@ RUN npm install -g n8n
 EXPOSE 5678
 
 # Start n8n
-CMD ["n8n"]
+CMD ["sh", "-c", "n8n --port $PORT"]
